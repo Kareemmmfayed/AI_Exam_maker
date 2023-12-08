@@ -1,7 +1,12 @@
+
+
 let loop = document.getElementById("label")
 let one = document.getElementById("one");
 let questionsContainer = document.getElementsByClassName("questions")[0];
 let two = document.getElementById("two")
+let title = document.getElementsByClassName("title")[0];
+let gene = document.getElementsByClassName("generator")[0];
+
 one.addEventListener("click", () => {
     questionsContainer.innerHTML = ``
     let thev = loop.value
@@ -18,5 +23,20 @@ one.addEventListener("click", () => {
             </div>
         </div>`;
     }
-    two.classList.remove("show")
+
+    let divs = document.querySelectorAll('.mar');
+
+    for (let i = 0; i < divs.length - 1; i++) {
+        divs[i].innerHTML += `
+        <div class="large">
+            <div class="line"></div>
+        </div>`;
+    }
+
+    if (thev != 0) {
+        two.classList.remove("show")
+        title.classList.remove("title")
+        title.classList.add("show")
+        gene.classList.add("show")
+    }
 });

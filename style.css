@@ -87,3 +87,34 @@ body {
 .show {
     display: none;
 }
+
+.title {
+    display: flex;
+}
+
+.title > input {
+    background-color: #d3a573;
+    border: none;
+    border-radius: 8px;
+    width: 38%;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+hr {
+    font-size: 20px;
+}
+
+.line {
+    height: 1px;
+    width: 70%;
+    background-color: #1E433F;
+}
+
+.large {
+    padding: 28px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
