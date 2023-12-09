@@ -14,11 +14,11 @@ one.addEventListener("click", () => {
         questionsContainer.innerHTML += `
         <div class="mar">
             <div class="question">
-                <label for="q1">Q1</label>
+                <label for="q1">Q${i + 1}</label>
                 <input type="text" id="q1">
             </div>
             <div class="answer">
-                <label for="a1">A1</label>
+                <label for="a1">A${i + 1}</label>
                 <input type="text" id="a1">
             </div>
         </div>`;
